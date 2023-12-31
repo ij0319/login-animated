@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+p {
+    margin: 1% 0;
+    color: white;
+}
+
+i {
+    color: #b6b6b6;
+}
+
+
+/*==================Classes================*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.conteudo {
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    
+    box-shadow: 0px 3px 4px 1px #b6b6b6;
+}
+
+.conteudo::before {
+    content: " ";
+    position: absolute;
+    border-radius: 15px 0 0 15px;
+    background-color: #219C90;
+    width: 40%;
+    height: 100%;
+}
+
+.conteudo1 {
+    display: flex;
+    position: relative;
+}
+
+.conteudo2 {
+    position: absolute;
+    display: flex;
+    z-index: -1;
+}
+
+
+
+.coluna1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    z-index: 11;
+}
+
+.coluna2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+
+.coluna2 h1 {
+    color: #219C90;
+}
+
+.conteudo2 .coluna2 h1 {
+    color: #FF5B22;
+}
+
+.coluna2 p {
+    color: #b6b6b6;
+}
+
+
+
+.redes-sociais {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 1% 0;
+}
+
+.lista-redes-sociais {
+    border: #b6b6b6 1px solid;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.lista-redes-sociais:nth-child(2) {
+    margin: 0 1rem;
+}
+
+.lista-redes-sociais:hover {
+    background-color: #219C90;
+    border-color: #219C90;
+
+
+    i {
+        color: white;
+    }
+}
+
+.conteudo2 .lista-redes-sociais:hover {
+    background-color: #FF5B22;
+    border-color: #FF5B22;
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+}
+
+.form input:not(:last-child) {
+    width: 100%;
+    height: 3rem;
+    margin: 4% 0;
+    border: none;
+    border-bottom: 1px solid #b6b6b6;
+    font-size: 1.1rem;
+    outline: none;
+
+
+    transition: all 0.4s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: linear-gradient(to bottom, #b6b6b600 98%, #219C90 2%);
+    background-position: -400rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.conteudo2 .form input:not(:last-child) {
+    transition: all 0.4s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: linear-gradient(to bottom, #b6b6b600 98%, #FF5B22 2%);
+    background-position: -400rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.form input:focus {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    border-bottom-color: #219C90;
+}
+
+.conteudo2 .form input:focus {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    border-bottom-color: #FF5B22;
+}
+
+.form  input::placeholder {
+    color: #b6b6b6;
+}
+
+
+
+.conteudo2 .form a {
+    display: flex;
+    order: 1;
+    margin-top: 5%;
+    text-decoration: none;
+    color: #b6b6b6;
+    transition: 0.5s;
+}
+
+.conteudo2 .form a:hover {
+    color: #FF5B22;
+}
+
+
+
+.btn {
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #219C90;
+    color: white;
+    font-size: 0.9rem;
+    transition: 0.5s;
+    width: 9rem;
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+
+.conteudo2 .btn {
+    background-color: #FF5B22;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #219C90;
+}
+
+.conteudo2 .btn:hover {
+    color: #FF5B22;
+}
+
+.form .btn {
+    width: 14rem;
+    height: 3rem;
+    margin-top: 5%;
+    transition: 0.5s;
+}
+
+.form .btn:hover {
+    transform: scale(1.1);
+    background-color: #219C90;
+    color: white;
+}
+
+.conteudo2 .form .btn:hover {
+    background-color: #FF5B22;
+}
+
+
+.sign-in .conteudo1 {
+    z-index: 11;
+    position: relative;
+}
+
+.sign-in .conteudo2 {
+    z-index: 11;
+}
+
+.sign-in .conteudo::before {
+    left: 60%;
+    border-radius: 0 15px 15px 0;
+    animation: slidein 1.5s;
+    background-color: #FF5B22;
+}
+
+.sign-up .conteudo2 {
+    z-index: -1;
+}
+
+.sign-up .conteudo1 {
+    z-index: 11;
+}
+
+.sign-up .conteudo::before {
+    animation: slideout 1.5s;
+}
+
+
+/*=============================Animações============================*/
+
+
+@keyframes slidein {
+    from {
+        left: 0;
+        width: 50%;
+        background-color: #219C90;
+        border-radius: 15px 0 0 15px;
+    }
+
+    90% {
+        background-color: #FF5B22;
+    }
+
+
+    99% {
+        width: 40%;
+    }
+
+    to {
+        left: 60%
+    }
+}
+
+@keyframes slideout {
+    from {
+        left: 50%;
+        width: 50%;
+        background-color: #FF5B22;
+        border-radius: 0 15px 15px 0;
+    }
+
+    90% {
+        background-color: #219C90;
+    }
+
+    99% {
+        width: 40%;
+        .btn{
+            transform: scale(1.1);
+        }
+    }
+
+    to {
+        left: 0;
+    }
+}
